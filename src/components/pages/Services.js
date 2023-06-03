@@ -1,6 +1,13 @@
 import React from 'react';
 import '../../App.css';
+import About from '../About';
+import HeroSection from '../HeroSection';
+import Footer from '../Footer';
 
 export default function Services() {
-  return <h1 className='services'>SERVICES</h1>;
+  return (
+    <>
+      <About />
+    </>
+  );
 }
