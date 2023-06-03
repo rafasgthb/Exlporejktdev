@@ -37,7 +37,7 @@ function About() {
                                 src='images/setu.jpg'
                                 text='Setu Babakan Perkampungan Kebudayaan Betawi'
                                 label='Project Manager'
-                                path='/products'
+                                path='/destination'
                             />
                             <CardItem
                                 src='images/museum.jpg'
