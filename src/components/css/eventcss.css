@@ -3,6 +3,16 @@
     color: #000000;
     font-family: sans-serif;
 }
+.side-by-side{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+}
+.card_destinasi{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+}
 .h2{
     color: var(--brand-navy-primary);
     font-size: 1.125rem;
