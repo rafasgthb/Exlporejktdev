@@ -43,13 +43,15 @@ export default class Registrasi extends Component{
             <Container className='row'>
                 <Grid container justify="center"  id='form'>
                     <Grid>
-                    <img src={logo} style={{width:"250px",display:"flex",paddingLeft:"25%"}}></img>
+                    {/* <img src={logo} style={{width:"250px",display:"flex",paddingLeft:"25%"}}></img> */}
+                    <img src={logo} style={{width:"250px",marginLeft:"40px"}}></img>
                         <form onSubmit={this.handleSubmit} id='textlogin'>
                             <TextField type="email" fullWidth margin="dense" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="Email" required />
                             <TextField type="password" fullWidth margin="dense" variant="outlined" size="small" value={password} onChange={this.handleChangeField} name="password" label="Password" required />
-                            <br/> <br/><Button type="submit" fullWidth variant="contained" color="primary">Sign Up</Button>
+                            <br/> <br/><Button type="submit" fullWidth variant="contained" style={{backgroundColor:"#ed8523", color:"#ffffff"}}>Sign Up</Button>
                         </form>
                         <p>Have an account? <Link to="/login">Sign In</Link></p><br/>
+                        <Link to="/">Go to Homepage </Link><br/>
                     </Grid>
                 </Grid>
             </Container>
