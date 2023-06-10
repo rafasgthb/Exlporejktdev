@@ -1,6 +1,14 @@
 import React from 'react';
 import '../../App.css';
+import About from '../About';
+import Cards from '../Cards';
+import Footer from '../Footer';
 
 export default function Services() {
-  return <h1 className='services'>SERVICES</h1>;
+  return (
+    <>
+      <About/>
+      <Footer />
+    </>
+  );
 }
