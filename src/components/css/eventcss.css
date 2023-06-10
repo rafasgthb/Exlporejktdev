@@ -1,3 +1,14 @@
+.css-ix1f03-MuiTypography-root {
+  margin: 0;
+    margin-top: 0px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  margin-top: 16px;
+  text-align: justify;
+}
 .nearest-event{
     padding-top: 20px;
     color: #000000;
