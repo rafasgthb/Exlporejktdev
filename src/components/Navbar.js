@@ -3,8 +3,9 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../img/logo-removebg.png'
+import { withRouter } from "react-router";
 
-function Navbar() {
+function Navbar(props) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -24,7 +25,10 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
-
+  
+  if (props.location.pathname==="/login" || props.location.pathname==="/register" ) {
+    return false;
+  }
   return (
     <>
       <nav className='navbar'>
@@ -85,4 +89,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default withRouter(Navbar);

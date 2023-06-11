@@ -42,14 +42,15 @@ export default class Login extends Component{
             <Container class='row'>
                 <Grid container justify="center" id='form'>
                     <Grid>
-                        <img src={logo} style={{width:"250px",marginLeft:"60px"}}></img>
+                        <img src={logo} style={{width:"250px",marginLeft:"65px"}}></img>
                         <form onSubmit={this.handleSubmit} id='textlogin' >
                             <TextField type="email" fullWidth margin="dense" variant="outlined" size="small" value={email} onChange={this.handleChangeField} name="email" label="Email" required />
                             <TextField type="password" fullWidth margin="dense" variant="outlined" size="small" value={password} onChange={this.handleChangeField} name="password" label="Password" required /><br/><br/>
                             <p>Forgot your password? <Link to="/forgot-password">Reset Password</Link></p><br/>
-                            <Button type="submit" fullWidth variant="contained" color="primary">Sign in</Button>
+                            <Button type="submit" fullWidth variant="contained" style={{backgroundColor:"#ed8523", color:"#ffffff"}}>Sign in</Button>
                         </form>
-                        <p style={{paddingTop:"20px",paddingLeft:"20px",paddingBottom:"20px"}}>Don't have an account? <Link to="/register">Sign Up</Link></p>
+                        <p style={{paddingTop:"20px",paddingLeft:"20px",paddingBottom:"20px"}}>Don't have an account? <Link to="/register">Sign Up</Link><br/><br/>
+                        <Link to="/">Go to Homepage </Link><br/></p>
                         </Grid>
                 </Grid>
             </Container>
